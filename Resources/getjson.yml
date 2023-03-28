@@ -1,0 +1,14 @@
+handler: getjson.lambda_function.lambda_handler 
+module: getjson
+name: getjson
+package:
+  patterns:
+    - getjson/**
+events:
+  - http:
+      path: /event/getjson
+      method: get
+      cors: true
+environment:
+  FILES_BUCKET: ${self:custom.FILES_BUCKET}
+ 

@@ -1,0 +1,12 @@
+handler: getdata.lambda_function.lambda_handler 
+module: getdata
+name: getdata
+package:
+  patterns:
+    - getdata/**
+events:
+  - http:
+      path: /event/getdata
+      method: get
+      cors: true 
+ 

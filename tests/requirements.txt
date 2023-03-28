@@ -1,0 +1,7 @@
+pytest
+python-dotenv
+boto3
+pytest-asyncio
+asynctest
+requests
+pillow
