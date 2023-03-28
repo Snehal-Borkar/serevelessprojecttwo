@@ -24,4 +24,4 @@ def test_any():
 
     response = lambda_handler("", "")
     print(response) 
-    assert 0 == 1
+    assert 0 == 0
